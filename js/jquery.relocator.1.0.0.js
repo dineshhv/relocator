@@ -195,7 +195,18 @@
 					mt=parseInt(img_height.replace("px", "")); //+parseInt(options.size.replace("px", ""))
 					var ht=$(".title_bg").css('height');
 					var pd=$(".title_bg").css('padding');
-					targ=parseInt(ht.replace("px", ""))+(parseInt(pd.replace("px", ""))*2);
+					if(browser=='mozilla')
+					{
+						var pd=$(".title_bg").css('padding-top');
+						
+						targ=parseInt(ht.replace("px", ""))+(parseInt(pd.replace("px", ""))*2);
+					}
+					else
+					{
+						var pd=$(".title_bg").css('padding');
+						targ=parseInt(ht.replace("px", ""))+(parseInt(pd.replace("px", ""))*2);
+					}
+
 					Fht=mt-targ;
 					mv=mt;
 					console.log(Fht);
