@@ -241,11 +241,12 @@
 					//mv=mt-parseInt(options.size.replace("px", ""));
 					if($(this).children().find('img').length>0){
 					
-					 $(this).children().append('<div id="highlighter" style="width:'+img_width+'; height:'+Fht+'px;  position:relative; z-index:15; margin-top:-300px;"> <div class="hig_content">'+desc+'</div></div>');
+					 $(this).children().append('<div id="highlighter" style="width:'+img_width+'; height:'+Fht+'px; position:relative; z-index:15; margin-top:-300px;"> <div class="hig_content">'+desc+'</div></div>');
 					}
 				});
 				$('#'+ID+" li ").hover(function() 
 				{
+					
 					$(this).children().children('#highlighter').animate({"margin-top":"+="+ mv+"px"},options.speed); 
 				},
 				function() 
