@@ -30,7 +30,7 @@
     "bugs": "https://github.com/dineshhv/relocator/issues",
     "homepage": "https://github.com/dineshhv/relocator",
     "docs": "https://github.com/dineshhv/relocator",
-    "download": "https://github.com/dineshhv/relocator/archive/master.zip",
+    "download": "https://github.com/dineshhv/relocator/archive/relocator.jquery.1.0.0.zip",
     "dependencies": {
         "jquery": ">=1.7"
     }
