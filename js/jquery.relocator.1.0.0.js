@@ -94,9 +94,13 @@
 			        {
 					    $(this).css('width', width);
 					    $(this).css('height', 'auto');
-					    var intHeight = height.replace("px", ""); //tirar o PX
+					    var intHeight = height.replace("px", ""); 
 						var crheight=((((width.replace("px", "")/img_real_width)*img_real_height)-height.replace("px", ""))/2)*-1;
 						$(this).css('margin-top', crheight);
+						newheight=(((width.replace("px", "")/img_width.replace("px", ""))*img_height.replace("px", ""))-height.replace("px", ""))/2;
+						$(this).css('margin-top', '-'+newheight+'px');
+						
+						
 					}
 					else 
 					{
@@ -104,6 +108,10 @@
 						$(this).css('height', height);
 						var crwidth=((((height.replace("px", "")/img_real_height)*img_real_width)-width.replace("px", ""))/2)*-1;
 						$(this).css('margin-left', crwidth);
+						console.log('widtht'+img_width);
+						newwidth=(((height.replace("px", "")/img_height.replace("px", ""))*img_width.replace("px", ""))-width.replace("px", ""))/2;
+						$(this).css('margin-left', '-'+newwidth+'px');
+						
 					}
 				});
 			}
