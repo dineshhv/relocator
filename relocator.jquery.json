@@ -1,0 +1,37 @@
+{
+    "name": "relocator",
+    "title": "jQuery relocator",
+    "description": "Relocator is lightweight jQuery plugin to create photo gallery. this plugin will make the different size images to fit with the specified canvas without 'size resizing'",
+    "keywords": [
+        "gallery",
+        "animation",
+        "hover",
+        "resize",
+        "image"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Dinesh Vadivel",
+        "url": "https://github.com/dineshhv/relocator/blob/master/author.txt"
+    },
+    "maintainers": [
+        {
+            "name": "dinesh",
+            "email": "dhuvarak12@gmail.com",
+            "url": "http://relocator.vinmein.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/dineshhv/relocator/blob/master/MIT-LICENSE.txt"
+        }
+    ],
+    "bugs": "https://github.com/dineshhv/relocator/issues",
+    "homepage": "https://github.com/dineshhv/relocator",
+    "docs": "https://github.com/dineshhv/relocator",
+    "download": "https://github.com/dineshhv/relocator/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
